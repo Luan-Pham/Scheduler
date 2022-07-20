@@ -2,4 +2,12 @@
 
 Work Day Scheduler
 
-For this project, the user can input events for each hour of the day. When the user clicks save, the event is saved to local storage.
+URL of deployed page: https://luan-pham.github.io/Scheduler/
+
+Each event enter to a timeblock is saved upon clicking button on right side of each block.
+
+Event is saved to localstorage for display in the future.
+
+Each timeblock is color coded to determine if it is in the future, present or past. (Work in Progress)
+
+<img src="./assets/day-sched.png">

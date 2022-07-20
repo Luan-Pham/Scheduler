@@ -4,11 +4,6 @@ var timeNow = moment().format("MMMM Do YYYY, h:mm:ss a");
 
 $("#currentDay").text(timeNow);
 
-// $(".saveBtn").click(function (event) {
-//   var userInput=;
-//   localStorage.setItem("scheduledEvent", userInput.value);
-// });
-
 $(".saveBtn").click(function (event) {
   var clickedValue = $(this).siblings(".textarea").val();
   var key = $(this).siblings(".time-block").attr("id");
