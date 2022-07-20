@@ -19,7 +19,23 @@ function displayEvents() {
     console.log(currentID);
     $(this).val(lastEvent);
   });
-  console.log(lastEvent);
 }
 
+function setupTime() {
+  $(".textarea").each(function () {
+    var currentTime = $(this).attr("id");
+    console.log(currentTime);
+    if (currentTime < moment().hour()) {
+      $(this).addClass("past");
+    }
+    if (currentTime == moment().hour()) {
+      $(this).addClass("present");
+    }
+    if (currentTime > moment().hour()) {
+      $(this).addClass("future");
+    }
+  });
+}
+
+setupTime();
 displayEvents();
