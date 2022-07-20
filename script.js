@@ -1,8 +1,7 @@
-//variable for current time via momentjs
-
-var timeNow = moment().format("MMMM Do YYYY, h:mm:ss a");
-
-$("#currentDay").text(timeNow);
+function displayTime() {
+  var timeNow = moment().format("MMMM Do YYYY, h:mm:ss a");
+  $("#currentDay").text(timeNow);
+}
 
 $(".saveBtn").click(function (event) {
   var clickedValue = $(this).siblings(".textarea").val();
@@ -39,3 +38,4 @@ function setupTime() {
 
 setupTime();
 displayEvents();
+setInterval(displayTime, 1000);
